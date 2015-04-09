@@ -1,0 +1,40 @@
+{
+  "name": "ose-example-dvb",
+  "preferGlobal": true,
+  "version": "0.1.7",
+  "author": "Jan Snasel <snaselj@gmail.com>",
+  "description": "Open Smart Environment DVB streamer example",
+  "contributors": [
+    {
+      "name": "Jan Snasel",
+      "email": "snaselj@gmail.com"
+    },
+    {
+      "name": "Fred Rooks",
+      "email": "fred@fredrooks.com"
+    }
+  ],
+  "main": "./lib/node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opensmartenvironment/ose-example-dvb.git"
+  },
+  "keywords": [
+    "open smart environment",
+    "dvb streamer"
+    "home automation",
+    "media player",
+    "raspberry pi"
+  ],
+  "dependencies": {
+    "ose": "*",
+    "ose-control": "*",
+    "ose-dvb": "*",
+    "ose-media": "*",
+    "ose-videolan": "*"
+  },
+  "license": "GPL-3.0+",
+  "engines": {
+    "node": ">=0.10"
+  }
+}

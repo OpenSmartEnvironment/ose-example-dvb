@@ -1,0 +1,11 @@
+*~
+#*#
+*_assh_*
+*.log
+*.swp
+README.html
+doc/glossary.html
+node_modules
+build/
+yui/theme/partials/index.handlebars
+examples/images
