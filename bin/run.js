@@ -12,7 +12,8 @@
  *
  * @description
  *
- * ## Installation
+ * @usage
+ * ## Usage
  *
  * For the DVB streamer application to work, you need the following
  * prerequisities: 
