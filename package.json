@@ -1,7 +1,7 @@
 {
   "name": "ose-example-dvb",
   "preferGlobal": true,
-  "version": "0.1.9",
+  "version": "0.1.10",
   "author": "Jan Snasel <snaselj@gmail.com>",
   "description": "Open Smart Environment DVB streamer example",
   "contributors": [
