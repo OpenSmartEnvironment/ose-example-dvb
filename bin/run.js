@@ -4,7 +4,7 @@
  * @caption DVB streamer example
  *
  * @readme
- * This example provides an DVB streamer to be used together with an
+ * This example provides a DVB streamer to be used together with an
  * [media player example] instance. In this example, a new entry
  * controlling a dvblast is created.
  *
@@ -18,16 +18,17 @@
  * For the DVB streamer application to work, you need the following
  * prerequisities: 
  * - Node.js and npm 
- * - dvblast
+ * - DVBlast
  *
- * If you run Debian Jessie, just run:
+ * To install the example application, do the following:
  *
- *     sudo apt-get install dvblast
+ *     git clone https://github.com/OpenSmartEnvironment/ose-example-dvb
+ *     cd ose-example-dvb
+ *     npm install
  *
  *
  * Start the DVB streamer example as follows:
  *
- *     cd ose-example-dvb
  *     ./bin/run.js
  *
  * @module example-dvb
@@ -46,9 +47,6 @@
 
 // The OSE framework is initialized by requiring the "ose" package:
 var O = require('ose').app(module, 'example');
-
-var Remote = require('ose-control/lib/remote');
-var Media = O.class('ose-media/lib/remote');
 
 /*!
  * OSE is configured by a configuration object, `module.exports` in
@@ -99,14 +97,13 @@ exports.cli = {
 exports.space = {
   id: 'ose/lib/space',         // Module id
   name: 'example.org',         // Name of the space
-  home: 'media',               // Home instance of the space
+  home: 'player',               // Home instance of the space
 
   // Peers to connect to
   peers: {
-    // Media player OSE instance – When running the dvb and player
-    // OSE instances on different machines, change the following IP
+    // Media player OSE instance – Change the following IP
     // address to that of the media player instance.
-    media: 'ws://10.166.25.8:4431',
+    player: 'ws://10.166.25.8:4431',  // CHANGE ME !!!!!
   }
 };
 
@@ -123,18 +120,7 @@ exports.control = {
 };
 
 
-/*
- * @caption Example LIRC remote controller configuration
- *
- * @readme
- * Personalize this file depending on your remote controller and LIRC
- * setup.
- *
- * @class example-lirc.lirc
- * @type module
- */
-
-// "lirc" shard initialization method.
+// "dvb" shard initialization method.
 function initDvb(shard) {
   shard.entry('dvbstreamer', 'dvblast', {
     name: 'DVBlast',
