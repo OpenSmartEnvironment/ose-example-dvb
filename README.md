@@ -1,7 +1,15 @@
 # Open Smart Environment - DVB streamer example
-This package is a part of the OSE suite.
-All packages can be found [on GitHub](https://github.com/opensmartenvironment/).
+This example provides an DVB streamer to be used together with an
+[media player example](http://opensmartenvironment.github.io/doc/#mediaplayerexample) instance. In this example, a new entry
+controlling a dvblast is created.
 
+## Important links
+This package is a part of the OSE suite. For more information, see the following links:
+- [DVB streamer example documentation](http://opensmartenvironment.github.io/doc/#example-dvb)
+- [OSE suite documentation](http://opensmartenvironment.github.io/doc/)
+- [All packages](https://github.com/opensmartenvironment/)
+
+## About OSE
 <b>Open Smart Environment software is a suite for creating
 multi-instance applications that work as a single whole.</b><br>
 Imagine, for example, a personal mesh running on various devices
@@ -38,12 +46,22 @@ OSE has the following prerequisites:
 - Node.js (>0.10) running on Debian Jessie and Raspbian
 - Firefox 37 or newer with Web Components enabled
 
-## Package description
-This example provides an DVB streamer to be used together with an
-[media player example](http://opensmartenvironment.github.io/doc/#mediaplayerexample) instance. In this example, a new entry
-controlling a dvblast is created.
+## Usage
 
-The documentation for "ose-example-dvb" package can be found **[here](http://opensmartenvironment.github.io/doc/#ose-example-dvb#)**.
+For the DVB streamer application to work, you need the following
+prerequisities: 
+- Node.js and npm 
+- dvblast
+
+If you run Debian Jessie, just run:
+
+    sudo apt-get install dvblast
+
+
+Start the DVB streamer example as follows:
+
+    cd ose-example-dvb
+    ./bin/run.js
 
 ## Licence
 This software is released under the terms of the [GNU General
