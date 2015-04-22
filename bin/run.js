@@ -24,7 +24,7 @@
  *
  *     git clone https://github.com/OpenSmartEnvironment/ose-example-dvb
  *     cd ose-example-dvb
- *     npm install
+ *     ./bin/install.sh
  *
  *
  * Start the DVB streamer example as follows:
