@@ -111,7 +111,7 @@ exports.space = {
 // DVB shard
 exports.control = {
   id: 'ose/lib/shard',
-  sid: 5,                   // Shard id unique within the space
+  sid: 8,                   // Shard id unique within the space
   scope: 'control',         // Scope the shard belongs to
   alias: 'dvb',            // Shard alias
   home: 'dvb',             // Home instance of the space
