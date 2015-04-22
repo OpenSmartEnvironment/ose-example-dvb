@@ -3,14 +3,12 @@
 /**
  * @caption DVB streamer example
  *
+ *
  * @readme
  * This example provides a DVB streamer to be used together with an
  * [media player example] instance. In this example, a new entry
  * controlling a dvblast is created.
  *
- * @oseExample 
- *
- * @description
  *
  * @usage
  * ## Usage
@@ -30,6 +28,7 @@
  * Start the DVB streamer example as follows:
  *
  *     ./bin/run.js
+ *
  *
  * @module example-dvb
  * @main example-dvb
