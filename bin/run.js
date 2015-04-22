@@ -7,7 +7,7 @@
  * @readme
  * This example provides a DVB streamer to be used together with an
  * [media player example] instance. In this example, a new entry
- * controlling a dvblast is created.
+ * controlling a DVBlast is created.
  *
  *
  * @usage

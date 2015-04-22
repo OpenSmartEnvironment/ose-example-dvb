@@ -1,7 +1,7 @@
 # Open Smart Environment - DVB streamer example
 This example provides a DVB streamer to be used together with an
 [media player example](http://opensmartenvironment.github.io/doc/#mediaplayerexample) instance. In this example, a new entry
-controlling a dvblast is created.
+controlling a DVBlast is created.
 
 ## Important links
 This package is a part of the OSE suite. For more information, see the following links:
