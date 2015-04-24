@@ -24,6 +24,10 @@
  *     cd ose-example-dvb
  *     npm install
  *
+ * Configure the IP address and port number of the OSE Media player within your network in `bin/run.js`.
+ *
+ *     player: 'ws://[ip address]:[port]'
+ *
  *
  * Start the DVB streamer example as follows:
  *
