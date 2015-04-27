@@ -59,6 +59,10 @@ To install the example application, do the following:
     cd ose-example-dvb
     npm install
 
+Configure the IP address and port number of the OSE Media player within your network in `bin/run.js`.
+
+    player: 'ws://[ip address](http://opensmartenvironment.github.io/doc/#ipaddress):[port](http://opensmartenvironment.github.io/doc/#port)'
+
 
 Start the DVB streamer example as follows:
 
