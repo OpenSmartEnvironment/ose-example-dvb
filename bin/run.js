@@ -5,17 +5,20 @@
  *
  *
  * @readme
- * This example provides a DVB streamer to be used together with an
- * [media player example] instance. In this example, a new entry
- * controlling a DVBlast is created.
+ * This example provides a DVB streamer to be used together with the
+ * [media player example].
  *
+ * @features
+ * - streaming using [DVBlast](http://www.videolan.org/projects/dvblast.html)
+ * - unicast streaming of single channels
+ * - multicast streaming of all channels in a single multiplex
  *
  * @usage
  * ## Usage
  *
  * For the DVB streamer application to work, you need the following
- * prerequisities: 
- * - Node.js and npm 
+ * prerequisites:
+ * - Node.js and npm
  * - DVBlast
  *
  * To install the example application, do the following:
