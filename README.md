@@ -53,8 +53,8 @@ OSE has the following prerequisites:
 ## Usage
 
 For the DVB streamer application to work, you need the following
-prerequisites: 
-- Node.js and npm 
+prerequisites:
+- Node.js and npm
 - DVBlast
 
 To install the example application, do the following:
@@ -65,7 +65,7 @@ To install the example application, do the following:
 
 Configure the IP address and port number of the OSE Media player within your network in `bin/run.js`.
 
-    player: 'ws://[ip address](http://opensmartenvironment.github.io/doc/#ipaddress):[port](http://opensmartenvironment.github.io/doc/#port)'
+    player: 'ws://IP_ADDRESS:PORT'
 
 
 Start the DVB streamer example as follows:

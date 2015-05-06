@@ -29,7 +29,7 @@
  *
  * Configure the IP address and port number of the OSE Media player within your network in `bin/run.js`.
  *
- *     player: 'ws://[ip address]:[port]'
+ *     player: 'ws://IP_ADDRESS:PORT'
  *
  *
  * Start the DVB streamer example as follows:
@@ -37,6 +37,7 @@
  *     ./bin/run.js
  *
  *
+ * @scope media
  * @module example-dvb
  * @main example-dvb
  */
