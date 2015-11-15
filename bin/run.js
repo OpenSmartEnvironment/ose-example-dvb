@@ -134,8 +134,8 @@ function initDvb(shard) {
 
     /* Uncomment following "mcast" property to enable multicast streaming
     mcast: {
-      id: 'mcastPool',
-      alias: 'mediaControl',
+      entry: 'mcastPool',
+      shard: 'mediaControl',
     },
     */
   });
