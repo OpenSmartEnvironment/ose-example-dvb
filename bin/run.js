@@ -53,7 +53,9 @@
 'use strict';
 
 // The OSE framework is initialized by requiring the "ose" package:
-var O = require('ose').app(module, 'example');
+var O = require('ose').module(module);
+O.scope = 'control';
+O.package = 'ose-example-dvb';
 
 /*!
  * OSE is configured by a configuration object, `module.exports` in
