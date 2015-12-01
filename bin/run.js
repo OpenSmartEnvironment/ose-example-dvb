@@ -67,6 +67,7 @@ O.package = 'ose-example-dvb';
 exports.ose = {
   name: 'dvb',          // Name of this OSE instance
   space: 'example.org',  // Space name this instance belongs to
+  spid: 3,
 };
 
 
@@ -131,7 +132,9 @@ exports.control = {
 
 // "dvb" shard initialization method.
 function initDvb(shard) {
-  shard.entry('dvbstreamer', 'dvblast', {
+  var trans = shard.startTrans();
+  trans.add('dvblast', {
+    alias: 'dvbstreamer',
     name: 'DVBlast',
 
     /* Uncomment following "mcast" property to enable multicast streaming
@@ -141,6 +144,8 @@ function initDvb(shard) {
     },
     */
   });
+
+  trans.commit(O._.noop);
 }
 
 // Start OSE instance
