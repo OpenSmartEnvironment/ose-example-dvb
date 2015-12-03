@@ -123,8 +123,8 @@ exports.control = {
   id: 'ose/lib/shard',
   sid: 8,                   // Shard id unique within the space
   scope: 'control',         // Scope the shard belongs to
-  alias: 'dvb',            // Shard alias
-  home: 'dvb',             // Home instance of the space
+  alias: 'dvb',             // Shard alias
+  home: 'dvb',              // Home instance of the space
   entries: initDvb,         // Method initializing entries belonging
                             // to the shard, defined below
 };
