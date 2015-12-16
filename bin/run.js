@@ -37,7 +37,6 @@
  *     ./bin/run.js
  *
  *
- * @scope media
  * @module example-dvb
  * @main example-dvb
  */
@@ -54,7 +53,6 @@
 
 // The OSE framework is initialized by requiring the "ose" package:
 var O = require('ose').module(module);
-O.scope = 'control';
 O.package = 'ose-example-dvb';
 
 /*!
@@ -122,7 +120,7 @@ exports.space = {
 exports.control = {
   id: 'ose/lib/shard',
   sid: 8,                   // Shard id unique within the space
-  scope: 'control',         // Scope the shard belongs to
+  schema: 'control',        // Schema the shard belongs to
   alias: 'dvb',             // Shard alias
   home: 'dvb',              // Home instance of the space
   entries: initDvb,         // Method initializing entries belonging
