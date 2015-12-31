@@ -130,7 +130,7 @@ exports.control = {
 
 // "dvb" shard initialization method.
 function initDvb(shard) {
-  var trans = shard.startTrans();
+  var trans = shard.transaction();
   trans.add('dvblast', {
     alias: 'dvbstreamer',
     name: 'DVBlast',
