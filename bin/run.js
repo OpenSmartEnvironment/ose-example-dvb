@@ -105,7 +105,7 @@ exports.cli = {
 exports.space = {
   id: 'ose/lib/space',         // Module id
   name: 'example.org',         // Name of the space
-  home: 'player',               // Home instance of the space
+  home: 'player',              // Home instance of the space
 
   // Peers to connect to
   peers: {
@@ -123,15 +123,15 @@ exports.control = {
   schema: 'control',        // Schema the shard belongs to
   alias: 'dvb',             // Shard alias
   home: 'dvb',              // Home instance of the space
-  entries: initDvb,         // Method initializing entries belonging
-                            // to the shard, defined below
+  upgrades: [
+    initDvb,                // Method initializing entries belonging to the shard, defined below
+  ],
 };
 
 
 // "dvb" shard initialization method.
-function initDvb(shard) {
-  var trans = shard.transaction();
-  trans.add('dvblast', {
+function initDvb(transaction, cb) {
+  transaction.add('dvblast', {
     alias: 'dvbstreamer',
     name: 'DVBlast',
 
@@ -143,7 +143,7 @@ function initDvb(shard) {
     */
   });
 
-  trans.commit(O._.noop);
+  return cb();
 }
 
 // Start OSE instance
