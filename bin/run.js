@@ -27,14 +27,17 @@
  *     cd ose-example-dvb
  *     npm install
  *
- * Configure the IP address and port number of the OSE Media player within your network in `bin/run.js`.
+ *
+ * To configure this example, edit `ose-example-dvb/bin/run.js`.
+ * If you wish to use this example together with the [Media player example],
+ * configure its IP address and port number.
  *
  *     player: 'ws://IP_ADDRESS:PORT'
  *
  *
  * Start the DVB streamer example as follows:
  *
- *     ./bin/run.js
+ *     ./ose-example-dvb/bin/run.js
  *
  *
  * @module example-dvb
@@ -56,11 +59,9 @@ const O = require('ose')(module)
   .setPackage('ose-example-dvb')
 ;
 
-/*!
- * OSE is configured by a configuration object, `module.exports` in
- * this case. Each property of this object defines the configuration
- * for one [OSE plugin].
- */
+// OSE is configured by a configuration object, `module.exports` in
+// this case. Each property of this object defines the configuration
+// for one OSE plugin.
 
 // Basic properties of OSE instance
 exports.ose = {
@@ -68,7 +69,6 @@ exports.ose = {
   space: 'example.org',  // Space name this instance belongs to
   spid: 3,
 };
-
 
 // Enable general control package
 exports['ose-control'] = {};
