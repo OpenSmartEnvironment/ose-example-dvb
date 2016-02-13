@@ -29,6 +29,7 @@
     "ose": "git+https://github.com/OpenSmartEnvironment/ose.git",
     "ose-control": "git+https://github.com/OpenSmartEnvironment/ose-control.git",
     "ose-dvb": "git+https://github.com/OpenSmartEnvironment/ose-dvb.git",
+    "ose-level": "git+https://github.com/OpenSmartEnvironment/ose-level.git",
     "ose-media": "git+https://github.com/OpenSmartEnvironment/ose-media.git",
     "ose-videolan": "git+https://github.com/OpenSmartEnvironment/ose-videolan.git"
   },
