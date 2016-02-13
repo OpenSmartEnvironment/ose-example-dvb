@@ -112,7 +112,7 @@ exports.space = {
   peers: {
     // Media player OSE instance – Change the following IP
     // address to that of the media player instance.
-    player: 'ws://10.166.25.8:4431',  // CHANGE ME !!!!!
+    player: 'ws://10.166.26.2:4431',  // CHANGE_ME !!!!!
   }
 };
 
